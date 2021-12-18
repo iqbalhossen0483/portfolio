@@ -7,7 +7,9 @@ const MyProject = () => {
             <div className='md:w-2/4 mx-auto my-10 text-center'>
                 <p className='caption'>My Compelete Projects</p>
                 <p className='text-4xl md:text-5xl font-bold pb-5'>My Latest Projects</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus et eum sunt neque commodi id pariatur! Animi,</p>
+                <p>
+                    Here I give some of my project
+                </p>
             </div>
             <div className='md:h-96 overflow-hidden md:grid grid-cols-3 gap-5 px-5'>
                 <div className="bg-white h-96 overflow-hidden rounded-lg my-project-1 relative">
