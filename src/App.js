@@ -1,10 +1,12 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import AdminRouter from './Pages/AdminRouter';
 import Deshboard from './Pages/Deshboard';
 import Education from './Pages/Home/Education';
 import Experience from './Pages/Home/Experience';
 import Home from './Pages/Home/Home';
 import MainSkill from './Pages/Home/MainSkill';
+import LogIn from './Pages/LogIn';
 
 function App() {
   return (
@@ -17,7 +19,8 @@ function App() {
             <Route path="experience" element={<Experience />} />
             <Route path="education" element={<Education />} />
           </Route>
-          <Route path="/desboard" element={<Deshboard />} />
+          <Route path="/log-in" element={<LogIn />} />
+          <Route path="/desboard" element={<AdminRouter element={<Deshboard />} />} />
         </Routes>
       </BrowserRouter>
     </div>

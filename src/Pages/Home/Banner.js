@@ -1,8 +1,6 @@
 import React from 'react';
 import { Grid } from '@mui/material';
 import Typical from 'react-typical';
-import LoadingButton from '@mui/lab/LoadingButton';
-import SaveIcon from '@mui/icons-material/Save';
 
 const Banner = () => {
     return (
@@ -10,8 +8,8 @@ const Banner = () => {
             <Grid container spacing={2}>
                 <Grid item xs={12} md={6}>
                     <div className='flex flex-col justify-center h-full'>
-                        <div className='flex text-4xl font-semibold'>
-                            <p className='ml-20 mr-3'>I am,</p>
+                        <div className='flex text-3xl font-semibold'>
+                            <p className='ml-3 md:ml-20 mr-3'>I am,</p>
                             <div>
                                 <Typical
                                     steps={["", 1000, " MD IQBAL HOSSEN", 2000]}
@@ -22,7 +20,7 @@ const Banner = () => {
                         </div>
                         <div className='text-xl'>
                             <p>Full Stack Web Developer</p>
-                            <p className='mt-5 px-10'>I am a Full Stack web developer Experienced in Javascript, React Js, NodeJs, MongoDB, React Bootstap, Tailwind CSS, MUI</p>
+                            <p className='mt-5 px-3 md:px-10'>I am a Full Stack web developer Experienced in Javascript, React Js, NodeJs, MongoDB, React Bootstap, Tailwind CSS, MUI</p>
                             <div className='my-6'>
                                 <a className='btn' href="https://drive.google.com/u/1/uc?id=1DLwSkiN7B4pvBIRzUI6_NBGsESu0VrXo&export=download">
                                     <i class="fa fa-download mr-3 text-xl" />

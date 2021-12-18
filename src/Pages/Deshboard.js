@@ -1,9 +1,11 @@
 import React, { useEffect } from 'react';
 import { useAlert } from 'react-alert';
+import useFirebase from './Firebase/useFirebase';
 
 const Deshboard = () => {
     const [users, setUser] = React.useState([]);
     const [load, setLoad] = React.useState(false);
+    const { logOut } = useFirebase();
     const alart = useAlert();
 
     useEffect(() => {
@@ -53,7 +55,7 @@ const Deshboard = () => {
             })
     }
     return (
-        <div className='px-10 bg-white'>
+        <div className='px-10 bg-white relative'>
             {users.length ?
                 <div className='grid grid-cols-4 gap-5 py-5 border-b tex'>
                     <p>User details</p>
@@ -80,6 +82,10 @@ const Deshboard = () => {
                     </div>
                 </div>)
             }
+
+            <div className='absolute top-5 right-4'>
+                <button onClick={logOut} className='btn btn-2'>Log Out</button>
+            </div>
         </div>
     );
 };

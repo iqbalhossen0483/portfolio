@@ -10,14 +10,14 @@ const About = () => {
     return (
         <div id='about' className='about pt-24 p-5'>
             <Grid container spacing={2}>
-                <Grid item xs={6}>
+                <Grid item xs={12} md={6}>
                     <div className='h-full flex justify-center items-center'>
                         <img
-                            className='bg-gray-200 w-4/6 rounded-lg pr-10'
+                            className='bg-gray-200 md:w-4/6 rounded-lg pr-10'
                             src="https://i.ibb.co/t29j3gB/Promo-Facebook-Ad-Carousel-removebg-preview.png" alt="" />
                     </div>
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs={12} md={6}>
                     <div>
                         <h2 className='text-4xl font-bold py-5'>About Me</h2>
                         <p>I'm Md Iqbal Hossen. A self-motivated and enthusiastic web developer with a deep interest in JavaScript. My Core Skill is based on JavaScript and i love to do something different using this and explore this evry kind of situation, bacouse I know its really a smart programming language. I have a dream with this, I'm trying to explore it.</p>

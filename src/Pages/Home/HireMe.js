@@ -28,14 +28,14 @@ const HireMe = () => {
     };
 
     return (
-        <div id='hire' className='py-28 pb-10 px-16 text-xl grid grid-cols-2'>
+        <div id='hire' className='md:py-28 pb-10 md:px-16 text-xl md:grid grid-cols-2 text-center md:text-left'>
             <div>
                 <p className='caption'>Let's Say, Hi</p>
                 <p className='text-5xl font-bold pb-5'>Hire Me</p>
                 <p>Call me directly: <span className='font-bold'>+880 18538 60483</span></p>
                 <p>Contact with email: <span className='font-bold'>iqbal.hossen.senbag.bd@gmail.com</span></p>
                 <form
-                    className='flex flex-col mt-10 form'
+                    className='flex flex-col px-3 md:px-0 mt-10 mb-10 md:mb-0 form'
                     onSubmit={handleSubmit(onSubmit)}>
                     <input {...register("name", { required: true })} placeholder='Your name' />
 
@@ -51,7 +51,7 @@ const HireMe = () => {
                 </form>
             </div>
             <div className='flex justify-center'>
-                <img className='ml-10 rounded-lg bg-gray-100' src="https://i.ibb.co/t29j3gB/Promo-Facebook-Ad-Carousel-removebg-preview.png" alt="" />
+                <img className='md:ml-10 rounded-lg bg-gray-100' src="https://i.ibb.co/t29j3gB/Promo-Facebook-Ad-Carousel-removebg-preview.png" alt="" />
             </div>
         </div>
     );
