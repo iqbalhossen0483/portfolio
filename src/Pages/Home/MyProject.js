@@ -17,6 +17,7 @@ const MyProject = () => {
                     <div className='project-description absolute text-xl top-0'>
                         <p> &#8226; It’s an E-commerce website. Here users can add their chosen products and order those together or can order a single product.</p>
                         <p> &#8226; Made an Admin who can add, update, delete any events and he can make another admin.</p>
+                        <p>Used JWT authentication</p>
                         <p> &#8226; Made responsive mobile and laptop.</p>
 
                         <div className='flex justify-center'>
