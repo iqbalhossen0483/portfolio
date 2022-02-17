@@ -67,7 +67,7 @@ const Header = () => {
                             <a href="https://www.linkedin.com/in/md-iqbal-hossen0483/">
                                 <i className="fab fa-linkedin"></i>
                             </a>
-                            <a href="https://github.com/md-rakib420">
+                            <a href="https://github.com/iqbalhossen0483">
                                 <i className="fab fa-github"></i>
                             </a>
                             <a href="https://www.upwork.com/freelancers/~01cf970c2813eaf6e3">
