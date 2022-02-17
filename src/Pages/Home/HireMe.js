@@ -32,7 +32,7 @@ const HireMe = () => {
             <div>
                 <p className='caption'>Let's Say, Hi</p>
                 <p className='text-5xl font-bold pb-5'>Hire Me</p>
-                <p>Call me directly: <span className='font-bold'>+880 18538 60483</span></p>
+                <p>Call me directly: <span className='font-bold'>+880 184 677 0635</span></p>
                 <p>Contact with email: <span className='font-bold'>iqbal.hossen.senbag.bd@gmail.com</span></p>
                 <form
                     className='flex flex-col px-3 md:px-0 mt-10 mb-10 md:mb-0 form'
