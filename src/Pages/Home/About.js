@@ -20,7 +20,7 @@ const About = () => {
                 <Grid item xs={12} md={6}>
                     <div>
                         <h2 className='text-4xl font-bold py-5'>About Me</h2>
-                        <p>I'm Md Iqbal Hossen. A self-motivated and enthusiastic web developer with a deep interest in JavaScript. My Core Skill is based on JavaScript and i love to do something different using this and explore this evry kind of situation, bacouse I know its really a smart programming language. I have a dream with this, I'm trying to explore it.</p>
+                        <p>I'm Md Iqbal Hossen. A self-motivated and enthusiastic web developer with a deep interest in JavaScript. My Core Skill is based on JavaScript and I love to do something different using this and explore every kind of situation because I know it's really a smart programming language. I have a dream with this, I'm trying to explore it.</p>
                         <div>
                             <div className='tabs mt-5'>
                                 <Tabs
