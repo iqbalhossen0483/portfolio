@@ -20,7 +20,9 @@ const About = () => {
                 <Grid item xs={12} md={6}>
                     <div>
                         <h2 className='text-4xl font-bold py-5'>About Me</h2>
-                        <p>I'm Md Iqbal Hossen. A self-motivated and enthusiastic web developer with a deep interest in JavaScript. My Core Skill is based on JavaScript and I love to do something different using this and explore every kind of situation because I know it's really a smart programming language. I have a dream with this, I'm trying to explore it.</p>
+                        <p>
+                            I am doing Honours on Economics in Dhaka College. My passion is to learn technology so I am doing MERN Stack Web Development with my academic career. As the position is a Web Developer role my keen attention to design and developing knowledge will be an added advantage for me to serve you with a quality-oriented service. I completed a complete MERN Stack Web Development course in Programming-hero. Like I said, my passion is to learn new technology. I am implementing various packages and tools after completing that course. Still now I am learning because I believe that learning has no end. I have that ability to learn new technology within a short time if I face something that is new for me. I have that quality to stick to something until I finish it and I feel good to do this. That’s how I solve various problems and increase my knowledge.
+                        </p>
                         <div>
                             <div className='tabs mt-5'>
                                 <Tabs
