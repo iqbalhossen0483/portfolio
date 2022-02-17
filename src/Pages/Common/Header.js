@@ -64,7 +64,7 @@ const Header = () => {
                             <a href="https://www.facebook.com/profile.php?id=100009923686402">
                                 <i className="fab fa-facebook-square"></i>
                             </a>
-                            <a href="https://www.linkedin.com/in/md-iqbal-hossen-633b59226/">
+                            <a href="https://www.linkedin.com/in/md-iqbal-hossen0483/">
                                 <i className="fab fa-linkedin"></i>
                             </a>
                             <a href="https://github.com/md-rakib420">
