@@ -6,6 +6,8 @@ const Experience = () => {
         <div
             style={{ paddingBottom: "3.3rem" }}
             className='text-xl font-semibold'>
+            <div className='flex justify-between mt-5'><p>TypeScript</p> <p>60%</p></div>
+            <LinearProgress variant="determinate" value={60} />
             <div className='flex justify-between mt-5'><p>React Router</p> <p>85%</p></div>
             <LinearProgress variant="determinate" value={85} />
             <div className='flex justify-between mt-5'><p>Tailwind CSS</p> <p>80%</p></div>
