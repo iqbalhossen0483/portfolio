@@ -1,14 +1,14 @@
-.bg-primary{
+.bg-primary {
   background-color: #8080800c;
 }
-.bg-secondary{
+.bg-secondary {
   background-color: #fff;
   box-shadow: 0 7px 7px #8080801c;
 }
-.text-common{
+.text-common {
   color: #32a9ed;
 }
-.menu > a{
+.menu > a {
   margin-left: 25px;
   cursor: pointer;
   font-size: 1.2rem;
@@ -16,26 +16,26 @@
   border-bottom: 3px solid #fff;
   transition: all 0.5s;
 }
-.menu > a:hover{
+.menu > a:hover {
   color: #32a9ed;
-  border-bottom-color:#32a9ed;
+  border-bottom-color: #32a9ed;
 }
-.menu-active{
+.menu-active {
   color: #32a9ed;
-  border-bottom-color:#32a9ed !important;
+  border-bottom-color: #32a9ed !important;
 }
-.icon > a{
+.icon > a {
   margin-left: 30px;
   font-size: 1.2rem;
   padding-bottom: 10px;
   cursor: pointer;
   color: #333;
 }
-.icon > a:hover{
+.icon > a:hover {
   color: #32a9ed;
 }
 
-.btn{
+.btn {
   box-sizing: border-box;
   appearance: none;
   background-color: transparent;
@@ -45,86 +45,93 @@
   cursor: pointer;
   font-size: 0.875rem;
   line-height: 1.25rem;
-  padding: 1rem 2rem;
+  padding: 0.75rem 2rem;
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
 }
-.btn:hover, .btn:focus {
+.btn:hover,
+.btn:focus {
   color: #fff;
   outline: 0;
   box-shadow: 0 0 40px 40px #32a9ed inset;
 }
 
-
-.about{
+.about {
   background-image: url("https://i.ibb.co/2vvVBKs/Frame-57.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
-.about img{
+.about img {
   height: 30rem;
 }
 
-.tabs a{
+.tabs a {
   font-size: 1.2rem;
   margin-right: 20px;
   border-radius: 2rem;
 }
-.caption{
+.caption {
   font-weight: 500;
   background: linear-gradient(
-    120deg, #1C99FE 20.69%, #5c2ce0 50.19%, #f00b31 79.69%);
-  -webkit-background-clip: text;
+    120deg,
+    #1c99fe 20.69%,
+    #5c2ce0 50.19%,
+    #f00b31 79.69%
+  );
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.project-description{
+.project-description {
   height: 100%;
   width: 100%;
   border-radius: 0.5rem;
   padding: 20px 10px;
   background-color: #808080da;
   text-align: justify;
-  color: #fff;visibility: hidden;
+  color: #fff;
+  visibility: hidden;
   opacity: 0;
   transition: visibility 0.5s, opacity 0.5s linear;
 }
-.project-description p{
+.project-description p {
   margin: 10px 0;
 }
 
-.my-project-1:hover .project-description{
+.my-project-1:hover .project-description {
   visibility: visible;
   opacity: 1;
 }
-.my-project-2:hover .project-description{
+.my-project-2:hover .project-description {
   visibility: visible;
   opacity: 1;
 }
-.my-project-3:hover .project-description{
+.my-project-3:hover .project-description {
   visibility: visible;
   opacity: 1;
 }
 
-.form input, .form textarea{
+.form input,
+.form textarea {
   border: 1px solid #8080803f;
   border-radius: 0.3rem;
   margin: 7px 0;
   padding: 7px 13px;
 }
-.form input:focus, .form textarea:focus{
+.form input:focus,
+.form textarea:focus {
   outline: none;
 }
 
-.icon-footer{
+.icon-footer {
   color: #ffffffce;
   padding-top: 7px;
 }
-.footer a{
+.footer a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -133,13 +140,13 @@
   width: 40px;
   height: 40px;
 }
-.footer a:hover{
+.footer a:hover {
   background-color: #f13895;
   border: none;
   color: #fff;
 }
 
-.language{
+.language {
   border: 1px solid #8080805b;
   background-color: #8080803b;
   padding: 3px 7px;
@@ -147,7 +154,7 @@
   margin: 5px;
   border-radius: 5px;
 }
-.btn-2{
+.btn-2 {
   padding: 5px 15px;
   margin-left: 5px;
 }
