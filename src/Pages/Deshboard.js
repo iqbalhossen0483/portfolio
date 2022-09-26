@@ -1,12 +1,10 @@
 import React, { useEffect } from "react";
-import { useAlert } from "react-alert";
 import useFirebase from "./Firebase/useFirebase";
 
 const Deshboard = () => {
   const [users, setUser] = React.useState([]);
   const [load, setLoad] = React.useState(false);
   const { logOut } = useFirebase();
-  const alart = useAlert();
 
   useEffect(() => {
     fetch("https://md-iqbal-portfolio.herokuapp.com/users")
@@ -25,7 +23,7 @@ const Deshboard = () => {
           if (data.deletedCount > 0) {
             const remain = users.filter((user) => user._id !== id);
             setUser(remain);
-            alart.show("user delete successful");
+            alert("user delete successful");
             if (load) {
               setLoad(false);
             } else {
@@ -50,7 +48,7 @@ const Deshboard = () => {
       .then((res) => res.json())
       .then((data) => {
         if (data.modifiedCount > 1) {
-          alart.show("Update successful");
+          alert("Update successful");
         }
       });
   };
@@ -71,10 +69,7 @@ const Deshboard = () => {
 
       {users.length &&
         users.map((user) => (
-          <div
-            key={user._id}
-            className='grid grid-cols-4 gap-5 py-5 border-b'
-          >
+          <div key={user._id} className='grid grid-cols-4 gap-5 py-5 border-b'>
             <p>{`Name: ${user.name} Number: ${user.number}`}</p>
             <p>{user.email}</p>
             <p>{user.massege}</p>

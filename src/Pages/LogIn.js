@@ -1,41 +1,52 @@
 import React, { useState } from "react";
-import { useForm } from "react-hook-form";
 import { useLocation, useNavigate } from "react-router-dom";
 import useFirebase from "./Firebase/useFirebase";
 
 const LogIn = () => {
   const [error, setError] = useState("");
-  const { register, handleSubmit } = useForm();
   const { LogInWithEmain } = useFirebase();
+  const [user, setUser] = useState({
+    email: "",
+    password: "",
+  });
   const navigate = useNavigate();
   const location = useLocation();
   const url = location?.state?.from?.pathname || "/";
 
-  const onSubmit = (user) => {
-    LogInWithEmain(user.email, user.password)
-      .then((result) => {
-        const user = result.user;
-        if (user) {
-          setError("");
-          navigate(url);
-        }
-      })
-      .catch((err) => setError(err.message));
+  function handleInput(e) {
+    const name = e.target.name;
+    setUser({ ...user, [name]: e.target.value });
+  }
+
+  const onSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const result = await LogInWithEmain(user.email, user.password);
+      const userData = result.user;
+      if (userData) {
+        setError("");
+        navigate(url);
+      } else throw Error({ message: "error" });
+    } catch (error) {
+      setError(error.message);
+    }
   };
   return (
     <div className='h-screen flex justify-center items-center'>
-      <form
-        onSubmit={handleSubmit(onSubmit)}
-        className='flex flex-col form h-96 w-96 justify-center bg-white px-10 rounded-lg shadow-lg'
-      >
+      <form onSubmit={(e) => onSubmit(e)} className='login-container form'>
         <input
           type='email'
-          {...register("email", { required: true })}
+          onChange={(e) => handleInput(e)}
+          required
+          name='email'
           placeholder='Your Email'
         />
         <input
           type='password'
-          {...register("password", { required: true })}
+          required
+          name='password'
+          onChange={(e) => handleInput(e)}
           placeholder='Your Password'
         />
         {error && <p className='text-red-400 text-xl'>{error}</p>}
