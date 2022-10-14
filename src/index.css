@@ -27,7 +27,7 @@
 @layer components {
   /* header component  */
   .header-wrapper {
-    @apply top-0 z-20 px-3 md:px-10 py-2 h-auto grid grid-cols-3 bg-white;
+    @apply z-20 px-3 md:px-10 py-2 h-auto grid grid-cols-3 bg-white sticky top-0 shadow;
   }
   .menu-container {
     @apply flex items-center;
