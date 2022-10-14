@@ -17,17 +17,20 @@ const MyProject = () => {
               <p className='name'>{project.name}</p>
               <p className='title'>{project.title}</p>
               <p>{project.technology.join(", ")}</p>
-              <div className='flex flex-wrap gap-2 mt-3'>
+              <div className='flex flex-wrap gap-x-4 gap-y-2 mt-3'>
                 <a href={project.codeF} target='_blank' rel='noreferrer'>
-                  Code F <i className='fa fa-code' aria-hidden='true'></i>
+                  <span>Code F</span>
+                  <i className='fa fa-code' aria-hidden='true' />
                 </a>
                 {project.codeB && (
                   <a href={project.codeB} target='_blank' rel='noreferrer'>
-                    Code B <i className='fa fa-code' aria-hidden='true'></i>
+                    <span>Code B</span>
+                    <i className='fa fa-code' aria-hidden='true' />
                   </a>
                 )}
                 <a href={project.demo} target='_blank' rel='noreferrer'>
-                  Demo <i className='fa fa-desktop' aria-hidden='true'></i>
+                  <span>Demo</span>
+                  <i className='fa fa-desktop' aria-hidden='true' />
                 </a>
               </div>
             </div>

@@ -1,5 +1,5 @@
 import { Navigate, useLocation } from "react-router-dom";
-import useFirebase from "./Firebase/useFirebase";
+import useFirebase from "../Firebase/useFirebase";
 
 const AdminRouter = ({ element }) => {
   const { user, loading } = useFirebase();

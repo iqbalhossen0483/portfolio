@@ -93,7 +93,7 @@
     @apply w-[50px] h-[50px] object-contain mx-auto;
   }
   .skills .item {
-    @apply border text-center px-5 py-3 bg-white hover:shadow-md;
+    @apply border rounded text-center px-5 py-3 bg-white hover:shadow-md;
   }
 
   /*------------------ 
@@ -110,7 +110,7 @@
   }
   .project-item {
     @apply mb-5 md:mb-0 md:grid grid-cols-2 gap-3 px-5 py-4 shadow-md bg-white
-     hover:bg-pink-50;
+     hover:bg-pink-50 rounded;
   }
   .project-item img {
     @apply w-full md:w-[250px] h-[200px];
@@ -123,7 +123,10 @@
   }
   .project-item a {
     @apply border bg-gray-100 border-gray-300 px-3 py-1 font-medium rounded
-     text-gray-700;
+     text-gray-700 space-x-2;
+  }
+  .project-item a i {
+    @apply text-xs;
   }
 
   /*--------------------- 

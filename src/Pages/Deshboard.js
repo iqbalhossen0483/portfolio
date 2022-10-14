@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import useFirebase from "./Firebase/useFirebase";
+import useFirebase from "../Firebase/useFirebase";
 
 const Deshboard = () => {
   const [users, setUser] = React.useState([]);

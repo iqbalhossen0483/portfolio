@@ -87,7 +87,7 @@ const Header = () => {
             <i className='fab fa-github text-2xl'></i>
           </a>
         </div>
-        <a className='btn hidden md:block' href='#hire'>
+        <a className='btn hidden md:block' href='#contact-container'>
           Contact me
         </a>
       </div>

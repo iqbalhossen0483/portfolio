@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import AdminRouter from "./Pages/AdminRouter";
 import Deshboard from "./Pages/Deshboard";
-import Home from "./Pages/Home/Home";
+import Home from "./Pages/Home";
 import LogIn from "./Pages/LogIn";
 
 function App() {

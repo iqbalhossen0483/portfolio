@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 
 const Contact = () => {
+  const [loading, setLoading] = useState(false);
   const [client, setClient] = useState({
     status: "pending",
     name: "",
@@ -17,6 +18,7 @@ const Contact = () => {
 
   const onSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
 
     try {
       const res = await fetch(
@@ -36,6 +38,7 @@ const Contact = () => {
     } catch (error) {
       alert(error.message);
     }
+    setLoading(false);
   };
 
   return (
@@ -94,7 +97,11 @@ const Contact = () => {
           />
 
           <div className='flex justify-center md:justify-start'>
-            <button className='btn w-52 mt-6' type='submit'>
+            <button
+              disabled={loading}
+              className='btn w-52 mt-6 disabled:cursor-not-allowed'
+              type='submit'
+            >
               SUBMIT NOW
             </button>
           </div>

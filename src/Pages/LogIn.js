@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import useFirebase from "./Firebase/useFirebase";
+import useFirebase from "../Firebase/useFirebase";
 
 const LogIn = () => {
   const [error, setError] = useState("");
