@@ -3,11 +3,11 @@ import services from "../../services/services";
 
 const MyServices = () => {
   return (
-    <div id='service' className='text-xl pt-16'>
+    <div id='service' className='pt-16'>
       <header>
         <p className='gradiant-text'>What can I do for you</p>
         <h1>My Services</h1>
-        <p className='text-justify px-3 md:px-0'>
+        <p className='text-justify px-3 md:px-0 tag'>
           Since my knowledge based on JavaScript, I can serve you all about
           this. You know, Javascript a programming language which is able to
           handle all kind of things like web app, android app and soo on.

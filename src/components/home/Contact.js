@@ -46,11 +46,11 @@ const Contact = () => {
       <div>
         <p className='gradiant-text text-center'>Let's Say, Hi</p>
         <div className='px-5 md:px-0'>
-          <p className='text-justify font-medium'>
+          <p className='tag text-justify'>
             Feel free to get in touch with me. I am always open to discussing
             new projects, creative ideas or opportunities to be part of your
             visions.
-          </p>{" "}
+          </p>
           <br />
           <p>
             Call me directly:{" "}

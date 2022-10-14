@@ -8,7 +8,7 @@ const About = () => {
         <img className='h-[80%]' src='./about-img.png' alt='' />
       </div>
       <div className='pb-10 md:pb-0'>
-        <h1>About Me</h1>
+        <h1 className='text-center md:text-left'>About Me</h1>
         <p className='text-xl'>
           {data.aboutme.map((item, i) => {
             if (typeof item === "string") return <span key={i}>{item}</span>;

@@ -7,7 +7,7 @@ const Skills = () => {
       <header>
         <p className='gradiant-text'>At a glance all my skills</p>
         <h1>My Skills</h1>
-        <p>Language, Framework & other</p>
+        <p className='tag'>Language, Framework & other</p>
       </header>
       <section className='skills'>
         {data.skills.map((skill) => (

@@ -17,12 +17,10 @@ const Header = () => {
     <div className='header-wrapper'>
       <div className='col-span-2'>
         <div className='menu-container'>
-          <img className='w-12' src='./logo.png' alt='' />
+          <img className='w-12 hidden md:block' src='./logo.png' alt='' />
           {menus.map((menu, i) => (
             <a
-              className={`${
-                hash === menu.hash ? "menu-active" : ""
-              } hidden md:block`}
+              className={hash === menu.hash ? "menu-active" : ""}
               href={menu.hash}
               key={i}
             >
