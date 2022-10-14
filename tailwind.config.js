@@ -5,6 +5,9 @@ module.exports = {
       colors: {
         primary: "#048ef6",
       },
+      fontFamily: {
+        "baloo-bhai": ["'Baloo Bhai 2'", "cursive"],
+      },
     },
   },
   plugins: [],

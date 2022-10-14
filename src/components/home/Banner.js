@@ -6,11 +6,11 @@ const Banner = () => {
   return (
     <div className='banner-container'>
       <section className='flex flex-col justify-center h-full px-7'>
-        <div className='flex text-3xl font-semibold'>
-          <p> I am, </p>
+        <div className='flex text-4xl font-semibold font-baloo-bhai space-x-2'>
+          <p> I am</p>
           <div>
             <Typical
-              steps={["", 1000, ` MD IQBAL HOSSEN`, 2000]}
+              steps={["", 1000, ` MD Iqbal Hossen`, 2000]}
               loop={Infinity}
               wrapper='p'
             />

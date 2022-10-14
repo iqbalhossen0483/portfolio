@@ -7,7 +7,7 @@
     @apply text-2xl font-semibold;
   }
   h1 {
-    @apply text-3xl md:text-4xl font-bold py-1 uppercase text-gray-800;
+    @apply text-3xl md:text-5xl font-bold py-1 uppercase text-gray-800 font-baloo-bhai;
   }
 }
 @layer utilities {
@@ -34,7 +34,8 @@
   }
   .menu-container a {
     @apply ml-6 cursor-pointer text-base gap-y-2 border-b-[3px] border-white 
-    transition-all hover:text-primary hover:border-primary uppercase font-medium;
+    font-baloo-bhai transition-all hover:text-primary hover:border-primary uppercase
+    font-semibold;
   }
 
   /*----------------- 
@@ -116,7 +117,7 @@
     @apply w-full md:w-[250px] h-[200px];
   }
   .project-item .name {
-    @apply text-2xl uppercase font-medium;
+    @apply text-2xl uppercase font-semibold font-baloo-bhai;
   }
   .project-item .title {
     @apply text-base font-medium text-gray-600 -mt-1 mb-2;
