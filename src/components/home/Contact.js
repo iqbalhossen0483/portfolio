@@ -22,7 +22,7 @@ const Contact = () => {
 
     try {
       const res = await fetch(
-        "https://md-iqbal-portfolio.herokuapp.com/users",
+        "https://myserver-production-ddf8.up.railway.app/users",
         {
           method: "POST",
           headers: {

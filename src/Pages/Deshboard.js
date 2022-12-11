@@ -7,7 +7,7 @@ const Deshboard = () => {
   const { logOut } = useFirebase();
 
   useEffect(() => {
-    fetch("https://md-iqbal-portfolio.herokuapp.com/users")
+    fetch("https://myserver-production-ddf8.up.railway.app/users")
       .then((res) => res.json())
       .then((data) => setUser(data));
   }, [load]);
@@ -15,7 +15,7 @@ const Deshboard = () => {
   const deleteUser = (id) => {
     const confirm = window.confirm("Are you sure to delete");
     if (confirm) {
-      fetch(`https://md-iqbal-portfolio.herokuapp.com/users/${id}`, {
+      fetch(`https://myserver-production-ddf8.up.railway.app/users/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())
@@ -38,7 +38,7 @@ const Deshboard = () => {
       id: id,
       status: "Done",
     };
-    fetch("https://md-iqbal-portfolio.herokuapp.com/users", {
+    fetch("https://myserver-production-ddf8.up.railway.app/users", {
       method: "PUT",
       headers: {
         "content-type": "application/json",
