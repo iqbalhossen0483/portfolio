@@ -22,7 +22,7 @@ const Contact = () => {
 
     try {
       const res = await fetch(
-        "https://myserver-production-ddf8.up.railway.app/users",
+        "https://myserver-production-ddf8.up.railway.app/portfolio/users",
         {
           method: "POST",
           headers: {
