@@ -21,7 +21,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className='text-white col-span-2 md:col-span-1 text-center'>
+      <div className='text-white col-span-2 md:col-span-1 text-sm text-center'>
         <p>Copyright &copy;, All right reserved by MD IQBAL</p>
       </div>
     </div>

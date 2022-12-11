@@ -1,15 +1,16 @@
 import React from "react";
 import { useState } from "react";
+const init = {
+  status: "pending",
+  name: "",
+  number: "",
+  email: "",
+  message: "",
+};
 
 const Contact = () => {
   const [loading, setLoading] = useState(false);
-  const [client, setClient] = useState({
-    status: "pending",
-    name: "",
-    number: "",
-    email: "",
-    message: "",
-  });
+  const [client, setClient] = useState(init);
 
   function handleInput(e) {
     const name = e.target.name;
@@ -34,6 +35,7 @@ const Contact = () => {
       const data = await res.json();
       if (data.insertedId) {
         alert("successfully sent");
+        setClient(init);
       } else throw Error({ message: "error" });
     } catch (error) {
       alert(error.message);
@@ -54,7 +56,7 @@ const Contact = () => {
           <br />
           <p>
             Call me directly:{" "}
-            <span className='font-semibold'>+880 184 677 0635</span>
+            <span className='font-semibold'>+880 185 386 0483</span>
           </p>
           <p>
             Contact with email:{" "}
@@ -71,6 +73,7 @@ const Contact = () => {
             onChange={(e) => handleInput(e)}
             required
             name='name'
+            value={client.name}
             placeholder='Your name'
           />
 
@@ -78,12 +81,14 @@ const Contact = () => {
             onChange={(e) => handleInput(e)}
             type='number'
             name='number'
+            value={client.number}
             placeholder='Your number'
           />
 
           <input
             onChange={(e) => handleInput(e)}
             type='email'
+            value={client.email}
             name='email'
             required
             placeholder='Your email'
@@ -93,6 +98,7 @@ const Contact = () => {
             onChange={(e) => handleInput(e)}
             required
             name='message'
+            value={client.message}
             placeholder='Your message'
           />
 
