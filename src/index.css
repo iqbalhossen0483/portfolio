@@ -96,7 +96,11 @@
     @apply w-[50px] h-[50px] object-contain mx-auto;
   }
   .skills .item {
-    @apply border rounded text-center px-5 py-3 bg-white hover:shadow-md;
+    @apply rounded text-center pt-3 bg-white shadow hover:shadow-lg relative;
+  }
+  .skill-lavel {
+    @apply font-semibold text-sm bg-gradient-to-r text-gray-700 from-green-500 
+    to-green-100 font-baloo-bhai py-1 rounded-b;
   }
 
   /*------------------ 

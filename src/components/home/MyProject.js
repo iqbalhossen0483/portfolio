@@ -16,7 +16,9 @@ const MyProject = () => {
             <div>
               <p className='name'>{project.name}</p>
               <p className='title'>{project.title}</p>
-              <p>{project.technology.join(", ")}</p>
+              <p className='text-sm font-medium'>
+                {project.technology.join(", ")}
+              </p>
               <div className='flex flex-wrap gap-x-4 gap-y-2 mt-3'>
                 <a href={project.codeF} target='_blank' rel='noreferrer'>
                   <span>Code F</span>

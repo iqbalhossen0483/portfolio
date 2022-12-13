@@ -16,16 +16,25 @@ const Banner = () => {
             />
           </div>
         </div>
-        <div className='text-xl'>
-          <p className='tag'>MERN Stack Web Developer</p>
+        <div>
+          <p className='tag'>MERN Stack Developer</p>
           <p className='mt-5 text-justify'>{data.shortDescription}</p>
-          <div className='my-6'>
+          <div className='my-6 space-x-2'>
             <a
               className='btn text-base'
               href='https://drive.google.com/u/1/uc?id=1DLwSkiN7B4pvBIRzUI6_NBGsESu0VrXo&export=download'
             >
               <i className='fa fa-download mr-3' />
-              Download my resume
+              Download resume
+            </a>
+            <a
+              target='_blank'
+              rel='noopener noreferrer'
+              className='btn text-base'
+              href='https://drive.google.com/u/1/uc?id=1DLwSkiN7B4pvBIRzUI6_NBGsESu0VrXo&export=share'
+            >
+              <i className='fa fa-eye mr-3' />
+              View Online
             </a>
           </div>
         </div>

@@ -13,7 +13,10 @@ const Skills = () => {
         {data.skills.map((skill) => (
           <div className='item' key={skill.name}>
             <img src={skill.logo} alt='' />
-            <p>{skill.name}</p>
+            <p className='font-medium my-1'>{skill.name}</p>
+            <div className='skill-lavel'>
+              <p>{skill.lavel}</p>
+            </div>
           </div>
         ))}
       </section>
