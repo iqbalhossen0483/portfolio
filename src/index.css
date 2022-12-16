@@ -117,10 +117,10 @@
   }
   .project-item {
     @apply mb-5 md:mb-0 md:grid grid-cols-2 gap-3 px-5 py-4 shadow-md bg-white
-     hover:bg-pink-50 rounded;
+     hover:bg-blue-50 rounded;
   }
   .project-item img {
-    @apply w-full md:w-[250px] h-[200px] object-cover object-center;
+    @apply w-full md:w-[250px] h-[200px] object-fill object-center;
   }
   .project-item .name {
     @apply text-2xl uppercase font-semibold font-baloo-bhai text-center md:text-left 
@@ -131,10 +131,13 @@
   }
   .project-item a {
     @apply border bg-gray-100 border-gray-300 px-3 py-1 font-medium rounded
-     text-gray-700 space-x-2;
+     text-gray-700 space-x-2 hover:bg-gray-700 hover:text-gray-100;
   }
   .project-item a i {
     @apply text-xs;
+  }
+  .project-item a.demo-btn {
+    @apply bg-primary text-gray-100 hover:bg-gray-700;
   }
 
   /*--------------------- 
@@ -165,4 +168,13 @@
   .footer-container .name {
     @apply flex items-center text-base font-bold text-white;
   }
+  .see-more-btn {
+    @apply bg-primary text-gray-100 border border-gray-300 px-3 py-1 font-medium rounded
+      hover:bg-gray-700 hover:text-gray-100;
+  }
+}
+
+a,
+.see-more-btn {
+  transition: all 0.3s linear;
 }
