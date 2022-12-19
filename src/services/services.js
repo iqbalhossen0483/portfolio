@@ -13,7 +13,7 @@ const services = [
       "Node Js",
       "Express Js",
       "MongoDB",
-      "Firebase",
+      "Mysql",
     ],
   },
   {
@@ -24,7 +24,6 @@ const services = [
       "Javascript",
       "React Js",
       "Next Js",
-      "Firebase",
       "CSS Or Any CSS Framework",
     ],
   },

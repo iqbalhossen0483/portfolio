@@ -147,6 +147,13 @@
     @apply py-20 px-5 lg:px-16 bg-[#ebf8ff] text-base md:grid grid-cols-2 scroll-m-10
     md:text-left;
   }
+  .alart-wrapper {
+    @apply fixed top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 bg-primary py-7 px-20 
+    rounded-md shadow-lg text-lg text-center text-white;
+  }
+  .alart-wrapper i {
+    @apply text-2xl;
+  }
 
   /*------------ 
     login page  
