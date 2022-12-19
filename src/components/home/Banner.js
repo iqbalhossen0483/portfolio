@@ -7,7 +7,7 @@ const Banner = () => {
     <div className='banner-container'>
       <section className='flex flex-col justify-center h-full px-7'>
         <div className='flex text-3xl lg:text-4xl font-semibold font-baloo-bhai space-x-2'>
-          <p> I am</p>
+          <p> I Am</p>
           <div>
             <Typical
               steps={["", 2000, ` MD Iqbal Hossen`, 3000]}
