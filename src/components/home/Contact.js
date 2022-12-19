@@ -22,7 +22,7 @@ const Contact = () => {
       e.preventDefault();
       setLoading(true);
       const res = await fetch(
-        "https://myserver-production-ddf8.up.railway.app/portfolio/users",
+        "https://myserver-production-ddf8.up.railway.app/portfolio/",
         {
           method: "POST",
           headers: {
@@ -31,8 +31,7 @@ const Contact = () => {
           body: JSON.stringify(client),
         }
       );
-      const data = await res.json();
-      if (data.insertedId) {
+      if (res.ok) {
         setAlart({ msg: "Thank you", type: "success" });
         setClient(init);
       } else throw Error({ message: "error" });
