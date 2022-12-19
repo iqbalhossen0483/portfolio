@@ -10,7 +10,7 @@ const Banner = () => {
           <p> I am</p>
           <div>
             <Typical
-              steps={["", 1000, ` MD Iqbal Hossen`, 2000]}
+              steps={["", 2000, ` MD Iqbal Hossen`, 3000]}
               loop={Infinity}
               wrapper='p'
             />
