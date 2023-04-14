@@ -31,6 +31,8 @@ const data = {
       codeB: "https://github.com/iqbalhossen0483/myserver",
       demo: "https://cycle-mart-3ff64.web.app/",
       img: "./cycle-mart.png",
+      userName: "admin@admin.com",
+      password: "AdminAdmin",
     },
     {
       name: "It valley",
@@ -48,6 +50,26 @@ const data = {
       img: "./it-valley.png",
     },
     {
+      name: "MTVnews",
+      title: "Full Stack Online News",
+      technology: ["Next js", "Tailwind", "Javascript", "Node JS", "Mysql"],
+      codeF: "https://github.com/iqbalhossen0483/navieasoftnews2022",
+      demo: "http://mtvnews24.com/",
+      img: "./mtvnews.png",
+      userName: "admin@gmail.com",
+      password: "1234567",
+    },
+    {
+      name: "Medicine Lagbe",
+      title: "Online Stock Management Sogtoware",
+      technology: ["Next js", "Tailwind", "Javascript", "Node JS", "Mysql"],
+      codeF: "https://github.com/iqbalhossen0483/ecommerce",
+      demo: "http://medicinelagbe.com/admin",
+      img: "./medicine.png",
+      userName: "admin@gmail.com",
+      password: "123456",
+    },
+    {
       name: "Islamia Hospital",
       title: "Full Stack Hospital App",
       technology: ["React", "Javascript", "Node JS", "Express JS", "MongoDB"],
@@ -55,6 +77,8 @@ const data = {
       codeB: "https://github.com/iqbalhossen0483/myserver",
       demo: "https://islamia-hospital.web.app/",
       img: "./hospital.png",
+      userName: "admin@admin.com",
+      password: "AdminAdmin",
     },
 
     {
@@ -74,6 +98,7 @@ const data = {
       demo: "https://apartment-29968.web.app/",
       img: "./apartment.png",
     },
+
     {
       name: "Fooddy",
       title: "Full Stack Food Delivary App",

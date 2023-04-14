@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import "./App.css";
+import AddToHomeScreen from "@ideasio/add-to-homescreen-react";
 import Home from "./Pages/Home";
+import "./App.css";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
           <Route path='/' element={<Home />} />
         </Routes>
       </BrowserRouter>
+      <AddToHomeScreen />
     </div>
   );
 }

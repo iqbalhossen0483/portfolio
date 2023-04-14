@@ -73,7 +73,7 @@
     @apply border rounded-md px-5 py-2 hover:shadow-lg;
   }
   .service-item-header {
-    @apply text-center mb-2 text-primary hover:gradiant-text;
+    @apply text-center mb-2 text-primary;
   }
   .language {
     @apply border border-gray-300 text-base font-medium py-1 px-2 inline-block m-1 

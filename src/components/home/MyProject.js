@@ -19,9 +19,19 @@ const MyProject = () => {
             <div>
               <p className='name'>{project.name}</p>
               <p className='title'>{project.title}</p>
-              <p className='text-sm font-medium'>
+              <p className='font-semibold text-sm'>Technologies: </p>
+              <p className='text-sm font-medium text-gray-500'>
                 {project.technology.join(", ")}
               </p>
+              {project.userName && (
+                <>
+                  <p className='font-semibold text-sm mt-2'>Login as Admin:</p>
+                  <div className='text-gray-500 font-semibold text-xs'>
+                    <p>User Name: {project.userName}</p>
+                    <p>Password: {project.password}</p>
+                  </div>
+                </>
+              )}
               <div className='flex flex-wrap gap-x-4 gap-y-2 mt-3'>
                 <a
                   className='demo-btn'

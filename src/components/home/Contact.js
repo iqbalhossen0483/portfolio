@@ -37,6 +37,7 @@ const Contact = () => {
       } else throw Error({ message: "error" });
     } catch (error) {
       setAlart({ msg: "Try again", type: "error" });
+      console.log(error);
     } finally {
       setLoading(false);
     }
@@ -121,7 +122,7 @@ const Contact = () => {
           </form>
         </div>
         <div className='flex justify-center'>
-          <img src='./hireme-img.png' alt='' />
+          <img className='h-[400px]' src='./hireme-img.png' alt='' />
         </div>
       </div>
       {alart.msg && (

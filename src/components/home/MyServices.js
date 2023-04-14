@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import services from "../../services/services";
 
 const MyServices = () => {
+  const [highlight, setHighlight] = useState(-1);
+
   return (
     <div id='service' className='pt-16'>
       <header>
@@ -14,9 +16,20 @@ const MyServices = () => {
         </p>
       </header>
       <section className='service-container'>
-        {services.map((data) => (
-          <div key={data.id} className='item'>
-            <h3 className='service-item-header'>{data.header}</h3>
+        {services.map((data, i) => (
+          <div
+            onMouseEnter={() => setHighlight(i)}
+            onMouseLeave={() => setHighlight(-1)}
+            key={data.id}
+            className='item'
+          >
+            <h3
+              className={`service-item-header ${
+                highlight === i ? "gradiant-text" : ""
+              }`}
+            >
+              {data.header}
+            </h3>
             <p className='text-justify mb-2'>{data.body}</p>
 
             {data.languages.map((ln, i) => (
