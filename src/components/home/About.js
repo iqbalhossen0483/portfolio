@@ -1,4 +1,5 @@
 import React from "react";
+
 import data from "../../services/data";
 
 const About = () => {
@@ -9,7 +10,7 @@ const About = () => {
       </div>
       <div className='pb-10 md:pb-0'>
         <h1 className='text-center md:text-left'>About Me</h1>
-        <p className='text-xl'>
+        <p className='text-gray-700 text-lg'>
           {data.aboutme.map((item, i) => {
             if (typeof item === "string") return <span key={i}>{item}</span>;
             else

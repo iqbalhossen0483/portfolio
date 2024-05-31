@@ -1,5 +1,6 @@
 import React from "react";
 import Typical from "react-typical";
+
 import data from "../../services/data";
 
 const Banner = () => {
@@ -18,7 +19,9 @@ const Banner = () => {
         </div>
         <div>
           <p className='tag'>MERN Stack Developer</p>
-          <p className='mt-5 text-justify'>{data.shortDescription}</p>
+          <p className='mt-5 text-justify font-medium text-gray-700'>
+            {data.shortDescription}
+          </p>
           <div className='my-6 space-x-2'>
             <a
               className='btn text-base'

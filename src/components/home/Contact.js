@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
+
 const init = {
   name: "",
   number: "",
@@ -68,9 +68,7 @@ const Contact = () => {
             </p>
             <p>
               Contact with email:{" "}
-              <span className='font-semibold'>
-                iqbal.hossen.senbag.bd@gmail.com
-              </span>
+              <span className='font-semibold'>iqbalhossen60483@gmail.com</span>
             </p>
           </div>
           <form

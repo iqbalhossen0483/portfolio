@@ -1,11 +1,11 @@
 const data = {
-  shortDescription: `An enthusiastic Full Stack web developer Experienced in Javascript, React Js, NodeJs, MongoDB, Mysql, React Bootstrap, Tailwind CSS, MUI`,
+  shortDescription: `An enthusiastic Full Stack web developer Experienced in Javascript, ReactJS, NodeJS, ExpressJS MongoDB, Mysql, Tailwind.`,
   aboutme: [
-    `I am doing Honours on Economics in Dhaka College. My passion is to learn 
-    technology so I am doing MERN Stack Web Development with my academic career. As the 
+    `My full name's Iqbal Hossen Rakib. I'm passionate to learn 
+    technology that's why I am doing MERN Stack Web Development with my academic career. As the 
     position is a Web Developer role my keen attention to design and developing knowledge 
-    will be an added advantage for me to serve you with a quality-oriented service. I
-    completed a complete MERN Stack Web Development course in`,
+    will be an added advantage for me to serve you with a quality-oriented service. I have
+    completed a "Complete MERN Stack Web Development" course in`,
     ["programming hero", "https://web.programming-hero.com"],
     `Like I said, my passion is to learn new technology. I am implementing various packages 
     and tools after completing that course. Still now I am learning because I believe that 
