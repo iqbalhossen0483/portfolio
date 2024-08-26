@@ -52,7 +52,11 @@ const Contact = () => {
     <>
       <div id='contact-container'>
         <div className='flex justify-center'>
-          <img className='w-[75%] h-[500px]' src='./iqbal-3.png' alt='' />
+          <img
+            className='w-full lg:w-[75%] h-[500px]'
+            src='./iqbal-3.png'
+            alt=''
+          />
         </div>
         <div>
           <p className='gradiant-text text-center'>Let's Say, Hi</p>

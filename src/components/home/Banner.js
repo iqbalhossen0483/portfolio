@@ -25,7 +25,7 @@ const Banner = () => {
           <p className='mt-5 text-justify font-medium text-gray-700'>
             {data.shortDescription}
           </p>
-          <div className='my-6 space-x-2'>
+          <div className='flex flex-wrap my-6 gap-2'>
             <a
               className='btn text-base'
               href='https://drive.google.com/u/1/uc?id=1DLwSkiN7B4pvBIRzUI6_NBGsESu0VrXo&export=download'

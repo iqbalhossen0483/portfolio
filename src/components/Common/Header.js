@@ -54,7 +54,7 @@ const Header = () => {
           </a>
         </div>
         <a
-          className='btn btn-2 border-light hidden md:block'
+          className='hidden lg:block btn btn-2 border-light'
           href='#contact-container'
         >
           Contact me

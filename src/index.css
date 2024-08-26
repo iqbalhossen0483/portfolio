@@ -46,12 +46,12 @@
     about component
   ----------------- */
   #about-container {
-    @apply bg-[#ebf8ff] px-5 md:pr-5 md:pl-0 lg:px-10 pt-10 text-justify md:grid
+    @apply bg-[#ebf8ff] px-5 md:pr-5 md:pl-0 lg:px-10 pt-10 text-justify lg:grid
     grid-cols-2 scroll-m-16 pb-5;
   }
 
   .about-card > div {
-    @apply w-96  flex flex-col items-center justify-center mt-8 ml-4;
+    @apply w-full lg:w-96  flex flex-col items-center justify-center mt-8 ml-4;
   }
 
   /*------------------- 
@@ -144,7 +144,7 @@
     contact me component 
   -----------------------*/
   #contact-container {
-    @apply py-20 px-5 lg:px-16 bg-light text-base md:grid grid-cols-2 scroll-m-10
+    @apply py-20 px-5 lg:px-16 bg-light text-base md:grid grid-cols-2 md:gap-2 scroll-m-10
     md:text-left;
   }
   .alart-wrapper {
@@ -153,14 +153,6 @@
   }
   .alart-wrapper i {
     @apply text-2xl;
-  }
-
-  /*------------ 
-    login page  
-  -------------*/
-  .login-container {
-    @apply flex flex-col h-96 w-96 justify-center bg-white px-10 rounded-lg 
-    shadow-lg;
   }
 
   /*------------------

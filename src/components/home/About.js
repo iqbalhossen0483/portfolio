@@ -5,7 +5,7 @@ import data from "../../services/data";
 const About = () => {
   return (
     <div id='about-container'>
-      <div className='about-card w-96 ml-14 my-10'>
+      <div className='about-card w-full lg:w-96 lg:ml-14 my-10'>
         <div>
           <img className='w-[150px] h-[150px]' src='/iqbal-2.png' alt='' />
           <p className='text-sm font-semibold text-primary'>

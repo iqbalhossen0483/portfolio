@@ -76,5 +76,5 @@
 .about-card {
   background-image: url("/public/about-bg.svg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
