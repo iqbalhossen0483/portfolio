@@ -1,11 +1,14 @@
-import React from "react";
 import Typical from "react-typical";
+import React from "react";
 
 import data from "../../services/data";
 
 const Banner = () => {
   return (
     <div className='banner-container'>
+      <div className='flex justify-center items-center'>
+        <img className='w-[250px] h-[250px]' src='./iqbal.png' alt='' />
+      </div>
       <section className='flex flex-col justify-center h-full px-7'>
         <div className='flex text-3xl lg:text-4xl font-semibold font-baloo-bhai space-x-2'>
           <p> I Am</p>
@@ -42,10 +45,6 @@ const Banner = () => {
           </div>
         </div>
       </section>
-
-      <div className='flex justify-center items-center'>
-        <img className='profile' src='./profile-img.png' alt='' />
-      </div>
     </div>
   );
 };

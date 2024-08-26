@@ -1,5 +1,5 @@
-import React from "react";
 import { useLocation } from "react-router-dom";
+import React from "react";
 
 const Header = () => {
   const location = useLocation();
@@ -14,7 +14,7 @@ const Header = () => {
   ];
 
   return (
-    <div className='header-wrapper'>
+    <div className='header-wrapper '>
       <div className='col-span-2'>
         <div className='menu-container'>
           <img className='w-12 hidden md:block' src='./logo.png' alt='' />
@@ -29,7 +29,6 @@ const Header = () => {
           ))}
         </div>
       </div>
-
       <div className='hidden md:flex items-center justify-end gap-5'>
         <div className='space-x-3 flex items-center'>
           <a
@@ -37,24 +36,27 @@ const Header = () => {
             target='_blank'
             rel='noreferrer'
           >
-            <i className='fab fa-facebook-square text-primary text-2xl'></i>
+            <i className='fab fa-facebook-square text-light hover:text-white text-2xl'></i>
           </a>
           <a
             href='https://www.linkedin.com/in/md-iqbal-hossen0483/'
             target='_blank'
             rel='noreferrer'
           >
-            <i className='fab fa-linkedin text-2xl text-blue-800'></i>
+            <i className='fab fa-linkedin text-2xl text-light hover:text-white'></i>
           </a>
           <a
             href='https://github.com/iqbalhossen0483'
             target='_blank'
             rel='noreferrer'
           >
-            <i className='fab fa-github text-2xl'></i>
+            <i className='fab fa-github text-light hover:text-white text-2xl'></i>
           </a>
         </div>
-        <a className='btn hidden md:block' href='#contact-container'>
+        <a
+          className='btn btn-2 border-light hidden md:block'
+          href='#contact-container'
+        >
           Contact me
         </a>
       </div>

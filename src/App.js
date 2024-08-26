@@ -1,7 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AddToHomeScreen from "@ideasio/add-to-homescreen-react";
-import Home from "./Pages/Home";
 import "./App.css";
+
+import Home from "./Pages/Home";
 
 function App() {
   return (

@@ -2,16 +2,16 @@
   background-color: #8080800c;
 }
 .menu-active {
-  color: #32a9ed;
-  border-bottom-color: #32a9ed !important;
+  color: #fff;
+  border-bottom-color: #fff !important;
 }
 
 .btn {
   box-sizing: border-box;
   appearance: none;
   background-color: transparent;
-  border: 2px solid #32a9ed;
-  color: #32a9ed;
+  border: 2px solid #1c90a6;
+  color: #1c90a6;
   cursor: pointer;
   border-radius: 8px;
   font-family: "Baloo Bhai 2", cursive;
@@ -26,7 +26,17 @@
 .btn:focus {
   color: #fff;
   outline: 0;
-  box-shadow: 0 0 40px 40px #32a9ed inset;
+  box-shadow: 0 0 40px 40px #1c90a6 inset;
+}
+.btn-2 {
+  border: 2px solid #def6fb;
+  color: #def6fb;
+}
+.btn-2:hover,
+.btn-2:focus {
+  color: #1c90a6;
+  outline: 0;
+  box-shadow: 0 0 40px 40px #def6fb inset;
 }
 
 .form input,
@@ -62,4 +72,9 @@
 .btn-2 {
   padding: 5px 15px;
   margin-left: 5px;
+}
+.about-card {
+  background-image: url("/public/about-bg.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }

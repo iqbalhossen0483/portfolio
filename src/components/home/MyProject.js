@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+
 import data from "../../services/data";
 
 const MyProject = () => {
@@ -43,12 +44,12 @@ const MyProject = () => {
                   <i className='fa fa-desktop' aria-hidden='true' />
                 </a>
                 <a href={project.codeF} target='_blank' rel='noreferrer'>
-                  <span>Code F</span>
+                  <span>Frontend Code</span>
                   <i className='fa fa-code' aria-hidden='true' />
                 </a>
                 {project.codeB && (
                   <a href={project.codeB} target='_blank' rel='noreferrer'>
-                    <span>Code B</span>
+                    <span>Backend Code</span>
                     <i className='fa fa-code' aria-hidden='true' />
                   </a>
                 )}
@@ -57,7 +58,7 @@ const MyProject = () => {
           </div>
         ))}
       </div>
-      <div className='flex justify-end mr-10 mt-5'>
+      <div className='flex justify-center mt-5'>
         <button
           onClick={() => {
             setNumber((prev) => {

@@ -21,23 +21,21 @@ const Contact = () => {
     try {
       e.preventDefault();
       setLoading(true);
-      const res = await fetch(
-        "https://myserver-production-ddf8.up.railway.app/portfolio/",
-        {
-          method: "POST",
-          headers: {
-            "content-type": "application/json",
-          },
-          body: JSON.stringify(client),
-        }
-      );
+      const res = await fetch("https://server.switchcafebd.com/portfolio", {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(client),
+      });
+      const result = await res.json();
+
       if (res.ok) {
-        setAlart({ msg: "Thank you", type: "success" });
+        setAlart({ msg: result.message, type: "success" });
         setClient(init);
-      } else throw Error({ message: "error" });
+      } else throw Error({ message: result.message });
     } catch (error) {
-      setAlart({ msg: "Try again", type: "error" });
-      console.log(error);
+      setAlart({ msg: error.message, type: "error" });
     } finally {
       setLoading(false);
     }
@@ -53,6 +51,9 @@ const Contact = () => {
   return (
     <>
       <div id='contact-container'>
+        <div className='flex justify-center'>
+          <img className='w-[75%] h-[500px]' src='./iqbal-3.png' alt='' />
+        </div>
         <div>
           <p className='gradiant-text text-center'>Let's Say, Hi</p>
           <div className='px-5 md:px-0'>
@@ -62,13 +63,9 @@ const Contact = () => {
               visions.
             </p>
             <br />
-            <p>
-              Call me directly:{" "}
-              <span className='font-semibold'>+880 185 386 0483</span>
-            </p>
-            <p>
-              Contact with email:{" "}
-              <span className='font-semibold'>iqbalhossen60483@gmail.com</span>
+            <p className='font-semibold'>Call me directly: +880 185 386 0483</p>
+            <p className='font-semibold'>
+              Contact with email: iqbalhossen60483@gmail.com
             </p>
           </div>
           <form
@@ -118,9 +115,6 @@ const Contact = () => {
               </button>
             </div>
           </form>
-        </div>
-        <div className='flex justify-center'>
-          <img className='h-[400px]' src='./hireme-img.png' alt='' />
         </div>
       </div>
       {alart.msg && (

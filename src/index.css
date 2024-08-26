@@ -12,13 +12,7 @@
 }
 @layer utilities {
   .gradiant-text {
-    font-weight: 500;
-    background: linear-gradient(
-      to right,
-      #1c99fe 20.69%,
-      #5c2ce0 50.19%,
-      #f00b31 79.69%
-    );
+    background: linear-gradient(to right, #1c90a6, #1ca66f82);
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -27,14 +21,14 @@
 @layer components {
   /* header component  */
   .header-wrapper {
-    @apply z-20 px-3 md:px-10 py-2 h-auto grid grid-cols-3 bg-white sticky top-0 shadow;
+    @apply z-20 px-3 md:px-10 py-2 h-auto grid grid-cols-3 sticky top-0 shadow bg-primary text-light;
   }
   .menu-container {
     @apply flex items-center space-x-4;
   }
   .menu-container a {
-    @apply cursor-pointer text-base gap-y-2 border-b-[3px] border-white 
-    font-baloo-bhai transition-all hover:text-primary hover:border-primary uppercase
+    @apply cursor-pointer text-base gap-y-2 border-b-[3px] 
+    font-baloo-bhai transition-all border-primary hover:text-white hover:border-white uppercase
     font-semibold;
   }
 
@@ -42,21 +36,22 @@
     banner component 
   ------------------*/
   .banner-container {
-    @apply py-10 md:grid grid-cols-2 lg:gap-20 lg:px-28 bg-white;
+    @apply py-10 md:grid grid-cols-2 lg:gap-14 lg:pr-28 bg-[#c2e8f3];
   }
   .tag {
-    @apply text-base font-semibold text-gray-500;
-  }
-  .profile {
-    @apply w-96 h-96;
+    @apply text-base font-semibold text-primary;
   }
 
   /*--------------- 
     about component
   ----------------- */
   #about-container {
-    @apply bg-[#ebf8ff] px-5 md:pr-5 md:pl-0 lg:px-10 pt-20 text-justify md:grid
-    grid-cols-2 scroll-m-16;
+    @apply bg-[#ebf8ff] px-5 md:pr-5 md:pl-0 lg:px-10 pt-10 text-justify md:grid
+    grid-cols-2 scroll-m-16 pb-5;
+  }
+
+  .about-card > div {
+    @apply w-96  flex flex-col items-center justify-center mt-8 ml-4;
   }
 
   /*------------------- 
@@ -70,14 +65,14 @@
     gap-5;
   }
   .service-container .item {
-    @apply border rounded-md px-5 py-2 hover:shadow-lg;
+    @apply border rounded-md px-5 py-2 hover:shadow-lg bg-light;
   }
   .service-item-header {
     @apply text-center mb-2 text-primary;
   }
   .language {
-    @apply border border-gray-300 text-base font-medium py-1 px-2 inline-block m-1 
-    rounded bg-gray-200;
+    @apply text-base font-medium py-1 px-2 inline-block m-1 
+    rounded bg-primary text-white;
   }
 
   /*---------------
@@ -96,10 +91,10 @@
     @apply w-[50px] h-[50px] object-contain mx-auto;
   }
   .skills .item {
-    @apply rounded text-center pt-3 bg-white shadow hover:shadow-lg relative;
+    @apply rounded text-center pt-3 shadow hover:shadow-lg relative bg-light;
   }
   .skill-lavel {
-    @apply font-semibold text-sm bg-gradient-to-r text-gray-700 from-green-500 
+    @apply font-semibold text-sm bg-gradient-to-r text-gray-700 from-primary 
     to-green-100 font-baloo-bhai py-1 rounded-b;
   }
 
@@ -113,11 +108,11 @@
     @apply md:w-2/4 mx-auto my-10 text-center;
   }
   .project-wrapper {
-    @apply lg:grid grid-cols-2 gap-5 px-5 space-y-5 lg:space-y-0;
+    @apply lg:grid grid-cols-2 px-5 space-y-5 lg:space-y-0;
   }
   .project-item {
-    @apply mb-5 md:mb-0 md:grid grid-cols-2 gap-3 px-5 py-4 shadow-md bg-white
-     hover:bg-blue-50 rounded;
+    @apply mb-5 md:mb-0 md:grid grid-cols-2 gap-3 px-5 py-4 bg-light
+     hover:bg-primary border border-primary;
   }
   .project-item img {
     @apply w-full md:w-[250px] h-[200px] object-fill object-center;
@@ -127,7 +122,12 @@
     mt-4 md:mt-0;
   }
   .project-item .title {
-    @apply text-base font-medium text-gray-600 -mt-1 mb-2 text-center md:text-left;
+    @apply text-base font-medium text-primary -mt-1 mb-2 text-center md:text-left;
+  }
+  .project-item:hover .title,
+  .project-item:hover .name,
+  .project-item:hover p {
+    @apply text-white;
   }
   .project-item a {
     @apply border bg-gray-100 border-gray-300 px-3 py-1 font-medium rounded
@@ -144,7 +144,7 @@
     contact me component 
   -----------------------*/
   #contact-container {
-    @apply py-20 px-5 lg:px-16 bg-[#ebf8ff] text-base md:grid grid-cols-2 scroll-m-10
+    @apply py-20 px-5 lg:px-16 bg-light text-base md:grid grid-cols-2 scroll-m-10
     md:text-left;
   }
   .alart-wrapper {
@@ -182,6 +182,7 @@
 }
 
 a,
-.see-more-btn {
+.see-more-btn,
+.project-item {
   transition: all 0.3s linear;
 }
