@@ -17,6 +17,21 @@ const data = {
 
   projects: [
     {
+      name: "It valley",
+      title: "Full Stack Online Shop",
+      technology: [
+        "Next JS",
+        "Javascript",
+        "Typescript",
+        "MUI",
+        "Node JS",
+        "MongoDB",
+      ],
+      codeF: "https://github.com/iqbalhossen0483/it-vallely",
+      demo: "https://it-vallely.vercel.app/",
+      img: "./it-valley.png",
+    },
+    {
       name: "cycle mart",
       title: "Full Stack E-commerce App",
       technology: [
@@ -34,41 +49,7 @@ const data = {
       userName: "admin@admin.com",
       password: "AdminAdmin",
     },
-    {
-      name: "It valley",
-      title: "Full Stack Online Shop",
-      technology: [
-        "Next JS",
-        "Javascript",
-        "Typescript",
-        "MUI",
-        "Node JS",
-        "MongoDB",
-      ],
-      codeF: "https://github.com/iqbalhossen0483/it-vallely",
-      demo: "https://it-vallely.vercel.app/",
-      img: "./it-valley.png",
-    },
-    {
-      name: "MTVnews",
-      title: "Full Stack Online News",
-      technology: ["Next js", "Tailwind", "Javascript", "Node JS", "Mysql"],
-      codeF: "https://github.com/iqbalhossen0483/navieasoftnews2022",
-      demo: "http://mtvnews24.com/",
-      img: "./mtvnews.png",
-      userName: "admin@gmail.com",
-      password: "1234567",
-    },
-    {
-      name: "Medicine Lagbe",
-      title: "Online Stock Management Sogtoware",
-      technology: ["Next js", "Tailwind", "Javascript", "Node JS", "Mysql"],
-      codeF: "https://github.com/iqbalhossen0483/ecommerce",
-      demo: "http://medicinelagbe.com/admin",
-      img: "./medicine.png",
-      userName: "admin@gmail.com",
-      password: "123456",
-    },
+
     {
       name: "Islamia Hospital",
       title: "Full Stack Hospital App",
@@ -116,6 +97,17 @@ const data = {
       demo: "https://delivery-53abd.web.app/",
       img: "./food.png",
     },
+
+    {
+      name: "MTVnews",
+      title: "Full Stack Online News",
+      technology: ["Next js", "Tailwind", "Javascript", "Node JS", "Mysql"],
+      codeF: "https://github.com/iqbalhossen0483/navieasoftnews2022",
+      demo: "http://mtvnews24.com/",
+      img: "./mtvnews.png",
+      userName: "admin@gmail.com",
+      password: "1234567",
+    },
     {
       name: "Tourism",
       title: "Full Stack tour App",
@@ -124,6 +116,16 @@ const data = {
       codeB: "https://github.com/iqbalhossen0483/myserver",
       demo: "https://tourism-web-e4f05.web.app/",
       img: "./tourism.png",
+    },
+    {
+      name: "Medicine Lagbe",
+      title: "Online Stock Management Sogtoware",
+      technology: ["Next js", "Tailwind", "Javascript", "Node JS", "Mysql"],
+      codeF: "https://github.com/iqbalhossen0483/ecommerce",
+      demo: "http://medicinelagbe.com/admin",
+      img: "./medicine.png",
+      userName: "admin@gmail.com",
+      password: "123456",
     },
     {
       name: "Honda cdr",

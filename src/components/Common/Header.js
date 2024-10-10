@@ -9,7 +9,7 @@ const Header = () => {
     { txt: "Home", hash: "#top" },
     { txt: "About", hash: "#about-container" },
     { txt: "Service", hash: "#service" },
-    { txt: "Portfolio", hash: "#project-container" },
+    { txt: "Project", hash: "#project-container" },
     { txt: "Contact", hash: "#contact-container" },
   ];
 
