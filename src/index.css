@@ -9,6 +9,9 @@
   h1 {
     @apply text-3xl md:text-5xl font-bold py-1 uppercase text-gray-800 font-baloo-bhai;
   }
+  h6 {
+    @apply text-lg font-semibold font-baloo-bhai text-primary;
+  }
 }
 @layer utilities {
   .gradiant-text {
@@ -65,10 +68,10 @@
     gap-5;
   }
   .service-container .item {
-    @apply border rounded-md px-5 py-2 hover:shadow-lg bg-light;
+    @apply border rounded-md px-5 py-2 hover:shadow-lg bg-light cursor-pointer;
   }
   .service-item-header {
-    @apply text-center mb-2 text-primary;
+    @apply text-center mb-2 text-primary border-b-2 border-secondary;
   }
   .language {
     @apply text-base font-medium py-1 px-2 inline-block m-1 
@@ -85,17 +88,16 @@
     @apply text-center;
   }
   .skills {
-    @apply grid grid-cols-3 md:grid-cols-5 gap-3 px-5 lg:px-24 mt-10;
+    @apply flex gap-5 flex-wrap;
   }
   .skills img {
     @apply w-[50px] h-[50px] object-contain mx-auto;
   }
   .skills .item {
-    @apply rounded text-center pt-3 shadow hover:shadow-lg relative bg-light;
+    @apply rounded-lg text-center pt-3 shadow hover:shadow-lg bg-light w-32 overflow-hidden;
   }
   .skill-lavel {
-    @apply font-semibold text-sm bg-gradient-to-r text-gray-700 from-primary 
-    to-green-100 font-baloo-bhai py-1 rounded-b;
+    @apply font-semibold text-sm bg-primary text-slate-50;
   }
 
   /*------------------ 
@@ -112,7 +114,7 @@
   }
   .project-item {
     @apply mb-5 md:mb-0 md:grid grid-cols-2 gap-3 px-5 py-4 bg-light
-     hover:bg-primary border border-primary;
+     hover:bg-primary border border-primary cursor-pointer;
   }
   .project-item img {
     @apply w-full md:w-[250px] h-[200px] object-fill object-center;
@@ -171,6 +173,8 @@
     @apply bg-primary text-gray-100 border border-gray-300 px-3 py-1 font-medium rounded
       hover:bg-gray-700 hover:text-gray-100;
   }
+
+  /*------------------ common css ------------------*/
 }
 
 a,

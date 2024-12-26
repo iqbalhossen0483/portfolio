@@ -1,18 +1,17 @@
 const data = {
-  shortDescription: `An enthusiastic Full Stack web developer Experienced in Javascript, ReactJS, NodeJS, ExpressJS MongoDB, Mysql, Tailwind.`,
+  shortDescription: `An enthusiastic and skilled Full Stack Web Developer with expertise in frontend 
+  and backend development, mobile app development, and database management. Proficient in building scalable
+  web applications and integrating AI models`,
   aboutme: [
-    `My full name's Iqbal Hossen Rakib. I'm passionate to learn 
-    technology that's why I am doing MERN Stack Web Development with my academic career. As the 
-    position is a Web Developer role my keen attention to design and developing knowledge 
-    will be an added advantage for me to serve you with a quality-oriented service. I have
-    completed a "Complete MERN Stack Web Development" course in`,
-    ["programming hero", "https://web.programming-hero.com"],
-    `Like I said, my passion is to learn new technology. I am implementing various packages 
-    and tools after completing that course. Still now I am learning because I believe that 
-    learning has no end. I have that ability to learn new technology within a short time if 
-    I face something that is new for me. I have that quality to stick to something until I
-    finish it and I feel good to do this. That's how I solve various problems and increase
-    my knowledge.`,
+    `I have developed a strong passion for technology, particularly in web development. Alongside my 
+    academic studies, I actively engage in MERN Stack Web Development, refining my skills through 
+    coursework and hands-on experience. Having completed a comprehensive MERN Stack course with`,
+    ["Programming-hero", "https://web.programming-hero.com"],
+    `I gained practical knowledge in designing and developing efficient, scalable web applications. 
+    My commitment to continuous learning and professional growth ensures I stay up-to-date with the latest 
+    technological advancements. With a proven ability to quickly grasp new technologies, solve complex 
+    problems, and deliver high-quality work, I am driven by a passion for creating meaningful solutions 
+    and thrive in challenging environments.`,
   ],
 
   projects: [
@@ -176,32 +175,49 @@ const data = {
       img: "./pin-matcher.png",
     },
   ],
-  skills: [
-    { name: "HTML", logo: "./skills/html.webp", lavel: "Excellent" },
-    { name: "CSS", logo: "./skills/css.webp", lavel: "Excellent" },
-    { name: "Tailwind", logo: "./skills/tailwind.webp", lavel: "Excellent" },
-    { name: "MUI", logo: "./skills/mui.png", lavel: "Good" },
-    { name: "Bootstrap", logo: "./skills/bootstrap.webp", lavel: "Good" },
-    { name: "SASS", logo: "./skills/sass.webp", lavel: "Comfortable" },
-    { name: "JS", logo: "./skills/js.webp", lavel: "Excellent" },
-    { name: "Typescript", logo: "./skills/typescript.webp", lavel: "Good" },
-    { name: "React", logo: "./skills/react.webp", lavel: "Excellent" },
-    { name: "Next", logo: "./skills/next.webp", lavel: "Excellent" },
-    { name: "Node", logo: "./skills/node.webp", lavel: "Good" },
-    { name: "Express", logo: "./skills/express.webp", lavel: "Excellent" },
-    { name: "MongoDB", logo: "./skills/mongodb.webp", lavel: "Excellent" },
-    { name: "Mongoose", logo: "./skills/mongoose.png", lavel: "Good" },
-    { name: "Mysql", logo: "./skills/mysql.png", lavel: "Excellent" },
-    { name: "JWT", logo: "./skills/jwt.png", lavel: "Comfortable" },
-    {
-      name: "React Testing",
-      logo: "./skills/react-testing.jpg",
-      lavel: "Comfortable",
-    },
-    { name: "Firebase", logo: "./skills/firebase.webp", lavel: "Good" },
-    { name: "Git", logo: "./skills/git.webp", lavel: "Comfortable" },
-    { name: "Figma", logo: "./skills/figma.png", lavel: "Good" },
-  ],
+
+  skills: {
+    frontend: [
+      { name: "HTML5", logo: "./skills/html.webp", lavel: "Excellent" },
+      { name: "CSS 3", logo: "./skills/css.webp", lavel: "Excellent" },
+      {
+        name: "Tailwind CSS",
+        logo: "./skills/tailwind.webp",
+        lavel: "Excellent",
+      },
+      { name: "MUI", logo: "./skills/mui.png", lavel: "Excellent" },
+      { name: "Bootstrap", logo: "./skills/bootstrap.webp", lavel: "Good" },
+      { name: "SASS", logo: "./skills/sass.webp", lavel: "Comfortable" },
+      { name: "JavaScript", logo: "./skills/js.webp", lavel: "Excellent" },
+      {
+        name: "Typescript",
+        logo: "./skills/typescript.webp",
+        lavel: "Excellent",
+      },
+      { name: "React JS", logo: "./skills/react.webp", lavel: "Excellent" },
+      { name: "Next JS", logo: "./skills/next.webp", lavel: "Excellent" },
+    ],
+    backend: [
+      { name: "Node JS", logo: "./skills/node.webp", lavel: "Excellent" },
+      { name: "Express JS", logo: "./skills/express.webp", lavel: "Excellent" },
+      {
+        name: "Typescript",
+        logo: "./skills/typescript.webp",
+        lavel: "Excellent",
+      },
+      { name: "JWT", logo: "./skills/jwt.png", lavel: "Excellent" },
+      { name: "Socket.io", logo: "./skills/socket.png", lavel: "Good" },
+      { name: "Vertext AI", logo: "./skills/vertext.png", lavel: "Good" },
+      { name: "MongoDB", logo: "./skills/mongodb.webp", lavel: "Excellent" },
+      { name: "MySQL", logo: "./skills/mysql.png", lavel: "Excellent" },
+      { name: "Mongoose", logo: "./skills/mongoose.png", lavel: "Excellent" },
+    ],
+    mobile: [
+      { name: "React Native", logo: "./skills/react.webp", lavel: "Excellent" },
+      { name: "Expo", logo: "./skills/expo.png", lavel: "Excellent" },
+      { name: "Firebase", logo: "./skills/firebase.webp", lavel: "Excellent" },
+    ],
+  },
 };
 
 export default data;

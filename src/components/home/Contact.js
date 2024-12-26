@@ -53,13 +53,13 @@ const Contact = () => {
       <div id='contact-container'>
         <div className='flex justify-center'>
           <img
-            className='w-full lg:w-[75%] h-[500px]'
+            className='w-full object-contain lg:w-[75%] h-[500px]'
             src='./iqbal-3.png'
             alt=''
           />
         </div>
         <div>
-          <p className='gradiant-text text-center'>Let's Say, Hi</p>
+          <h6 className='text-center'>Let's Say, Hi</h6>
           <div className='px-5 md:px-0'>
             <p className='tag text-justify'>
               Feel free to get in touch with me. I am always open to discussing

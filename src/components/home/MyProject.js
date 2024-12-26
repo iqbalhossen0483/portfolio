@@ -9,7 +9,7 @@ const MyProject = () => {
   return (
     <div id='project-container'>
       <header>
-        <p className='gradiant-text'>My Compeleted Projects</p>
+        <h6>My Compeleted Projects</h6>
         <h1 className='text-4xl lg:text-5xl'>My Latest Projects</h1>
         <p className='tag'>Here I mentioned some of my projects</p>
       </header>
