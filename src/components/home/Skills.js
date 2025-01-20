@@ -22,17 +22,22 @@ const List = ({ data, title }) => {
   return (
     <div>
       <h6 className='mb-2 border-b-2 w-fit'>{title}</h6>
-      <section className='skills'>
+      <section className='skills cursor-pointer'>
         {data.map((skill, i) => (
           <div className='item' key={skill.name}>
             <img
-              className={`animate-bounce-down [animation-dely=${100 * i}ms]`}
+              className={`animate-bounce-ups [animation-delay:${100 * i}ms]`}
               src={skill.logo}
               alt=''
             />
-            <p className='font-medium my-1'>{skill.name}</p>
+            <p className='font-medium my-1 text-primary'>{skill.name}</p>
             <div className='skill-lavel'>
-              <p>{skill.lavel}</p>
+              <p
+                style={{ animationDelay: `${i * 200}ms` }}
+                className='animate-bounce-right hover:animate-paused'
+              >
+                {skill.lavel}
+              </p>
             </div>
           </div>
         ))}

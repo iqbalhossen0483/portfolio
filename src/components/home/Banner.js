@@ -7,7 +7,11 @@ const Banner = () => {
   return (
     <div className='banner-container'>
       <div className='flex justify-center items-center'>
-        <img className='w-[250px] h-[250px]' src='./iqbal.png' alt='' />
+        <img
+          className='w-[250px] h-[250px] animate-bounce-up'
+          src='./iqbal.png'
+          alt=''
+        />
       </div>
       <section className='flex flex-col justify-center h-full px-7'>
         <div className='flex text-3xl lg:text-4xl font-semibold font-baloo-bhai space-x-2'>
