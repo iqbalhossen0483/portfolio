@@ -1,5 +1,5 @@
-import { useLocation } from "react-router-dom";
 import React from "react";
+import { useLocation } from "react-router-dom";
 
 const Header = () => {
   const location = useLocation();
@@ -17,10 +17,16 @@ const Header = () => {
     <div className='header-wrapper '>
       <div className='col-span-2'>
         <div className='menu-container'>
-          <img className='w-12 hidden md:block' src='./logo.png' alt='' />
+          <img
+            className='w-12 hidden md:block animate-bounce-down'
+            src='./logo.png'
+            alt=''
+          />
           {menus.map((menu, i) => (
             <a
-              className={hash === menu.hash ? "menu-active" : ""}
+              className={`${
+                hash === menu.hash ? "menu-active" : ""
+              } animate-bounce-down [animation-delay:${i * 100}ms]`}
               href={menu.hash}
               key={i}
             >
@@ -32,6 +38,7 @@ const Header = () => {
       <div className='hidden md:flex items-center justify-end gap-5'>
         <div className='space-x-3 flex items-center'>
           <a
+            className='animate-bounce-down'
             href='https://www.facebook.com/profile.php?id=100009923686402'
             target='_blank'
             rel='noreferrer'
@@ -39,6 +46,7 @@ const Header = () => {
             <i className='fab fa-facebook-square text-light hover:text-white text-2xl'></i>
           </a>
           <a
+            className='animate-bounce-down [animation-delay:100ms] '
             href='https://www.linkedin.com/in/md-iqbal-hossen0483/'
             target='_blank'
             rel='noreferrer'
@@ -46,6 +54,7 @@ const Header = () => {
             <i className='fab fa-linkedin text-2xl text-light hover:text-white'></i>
           </a>
           <a
+            className='animate-bounce-down [animation-delay:200ms] '
             href='https://github.com/iqbalhossen0483'
             target='_blank'
             rel='noreferrer'
@@ -54,7 +63,7 @@ const Header = () => {
           </a>
         </div>
         <a
-          className='hidden lg:block btn btn-2 border-light'
+          className='hidden lg:block btn btn-2 border-light animate-bounce-down [animation-delay:300ms]'
           href='#contact-container'
         >
           Contact me

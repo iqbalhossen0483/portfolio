@@ -23,9 +23,13 @@ const List = ({ data, title }) => {
     <div>
       <h6 className='mb-2 border-b-2 w-fit'>{title}</h6>
       <section className='skills'>
-        {data.map((skill) => (
+        {data.map((skill, i) => (
           <div className='item' key={skill.name}>
-            <img src={skill.logo} alt='' />
+            <img
+              className={`animate-bounce-down [animation-dely=${100 * i}ms]`}
+              src={skill.logo}
+              alt=''
+            />
             <p className='font-medium my-1'>{skill.name}</p>
             <div className='skill-lavel'>
               <p>{skill.lavel}</p>

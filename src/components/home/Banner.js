@@ -30,7 +30,7 @@ const Banner = () => {
               className='btn text-base'
               href='https://drive.google.com/u/1/uc?id=1DLwSkiN7B4pvBIRzUI6_NBGsESu0VrXo&export=download'
             >
-              <i className='fa fa-download mr-3' />
+              <i className='fa fa-download mr-3 animate-bounce' />
               Download resume
             </a>
             <a
@@ -39,7 +39,7 @@ const Banner = () => {
               className='btn text-base'
               href='https://drive.google.com/u/1/uc?id=1DLwSkiN7B4pvBIRzUI6_NBGsESu0VrXo&export=share'
             >
-              <i className='fa fa-eye mr-3' />
+              <i className='fa fa-eye mr-3 animate-pulse' />
               View Online
             </a>
           </div>

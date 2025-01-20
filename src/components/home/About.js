@@ -19,7 +19,7 @@ const About = () => {
             className='btn mt-5 mb-7'
             href='https://drive.google.com/u/1/uc?id=1DLwSkiN7B4pvBIRzUI6_NBGsESu0VrXo&export=download'
           >
-            <i className='fa fa-download mr-3' />
+            <i className='fa fa-download mr-3 animate-bounce' />
             DOWNLOAD CV
           </a>
         </div>

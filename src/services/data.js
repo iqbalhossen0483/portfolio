@@ -178,8 +178,6 @@ const data = {
 
   skills: {
     frontend: [
-      { name: "HTML5", logo: "./skills/html.webp", lavel: "Excellent" },
-      { name: "CSS 3", logo: "./skills/css.webp", lavel: "Excellent" },
       {
         name: "Tailwind CSS",
         logo: "./skills/tailwind.webp",
@@ -196,6 +194,14 @@ const data = {
       },
       { name: "React JS", logo: "./skills/react.webp", lavel: "Excellent" },
       { name: "Next JS", logo: "./skills/next.webp", lavel: "Excellent" },
+      { name: "Redux", logo: "./skills/redux.png", lavel: "Good" },
+      {
+        name: "Tanstack Query",
+        logo: "./skills/tanstack.png",
+        lavel: "Excellent",
+      },
+      { name: "HTML5", logo: "./skills/html.webp", lavel: "Excellent" },
+      { name: "CSS 3", logo: "./skills/css.webp", lavel: "Excellent" },
     ],
     backend: [
       { name: "Node JS", logo: "./skills/node.webp", lavel: "Excellent" },
