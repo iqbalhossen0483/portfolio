@@ -32,7 +32,7 @@ const Banner = () => {
           <div className='flex flex-wrap my-6 gap-2'>
             <a
               className='btn text-base'
-              href='https://drive.google.com/u/1/uc?id=1DLwSkiN7B4pvBIRzUI6_NBGsESu0VrXo&export=download'
+              href='https://drive.google.com/uc?export=download&id=1tzCBcs2sx_9V1PWreVFvzIHl5-BJO0Yb'
             >
               <i className='fa fa-download mr-3 animate-bounce' />
               Download resume
@@ -41,7 +41,7 @@ const Banner = () => {
               target='_blank'
               rel='noopener noreferrer'
               className='btn text-base'
-              href='https://drive.google.com/u/1/uc?id=1DLwSkiN7B4pvBIRzUI6_NBGsESu0VrXo&export=share'
+              href='https://drive.google.com/file/d/1tzCBcs2sx_9V1PWreVFvzIHl5-BJO0Yb/view'
             >
               <i className='fa fa-eye mr-3 animate-pulse' />
               View Online
